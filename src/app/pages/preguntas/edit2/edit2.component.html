@@ -1,0 +1,53 @@
+
+<div class="container mt-4">
+  <h2>**Gestión de Preguntas**</h2>
+
+  
+  <h4 class="mt-4">Listado de Preguntas</h4>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Argumento</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pregunta of preguntasList">
+        <td>{{ pregunta.id }}</td>
+        <td>{{ pregunta.argumento }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  
+  <h5 class="mt-4">Agregar Nueva Pregunta</h5>
+  <form (ngSubmit)="guardarPregunta()">
+    <div class="mb-3">
+      <label for="id" class="form-label">ID</label>
+      <input
+        type="text"
+        id="id"
+        class="form-control"
+        [value]="nextId"
+        disabled
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="argumento" class="form-label">Argumento</label>
+      <input
+        type="text"
+        id="argumento"
+        class="form-control"
+        [(ngModel)]="nuevaPregunta.argumento"
+        name="argumento"
+        required
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+  </form>
+</div>
+<div class="d-grid gap-2 col-6 mx-auto">
+  <button type="button" class="btn btn-warning" (click)="back()">Atras</button>
+</div>

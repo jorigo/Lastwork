@@ -1,0 +1,29 @@
+<h3>AGREGAR PREGUNTA</h3>
+
+<div>
+  <p>ID Encuesta: {{ encuesta.id }}</p>
+  <p>Nombre Encuesta: {{ encuesta.nombre }}</p>
+
+  <!-- Selector de preguntas -->
+  <label for="pregunta">Seleccione una Pregunta:</label>
+  <select
+    id="pregunta"
+    [(ngModel)]="selectedPregunta"
+    name="pregunta"
+    class="form-control"
+  >
+    <option *ngFor="let pregunta of preguntasList" [ngValue]="pregunta">
+      {{ pregunta.argumento }}
+    </option>
+  </select>
+  <br />
+
+  <!-- Botón de guardar -->
+  <button class="btn btn-primary" (click)="onGuardar()">Guardar</button>
+</div>
+
+
+   
+<div class="d-grid gap-2 col-6 mx-auto">
+        <button type="button" class="btn btn-secondary" (click)="back()">Volver al listado</button>
+      </div>

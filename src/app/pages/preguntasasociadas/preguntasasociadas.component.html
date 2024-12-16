@@ -1,0 +1,41 @@
+<div class="container">
+  <h3>Preguntas Asociadas a la Encuesta</h3>
+  <p>ID Encuesta: {{ encuestaId }}</p>
+
+  <table class="table table-striped mt-4">
+    <thead>
+      <tr>
+        <th>ID Pregunta</th>
+        <th>Argumento</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pregunta of preguntas">
+        <td>{{ pregunta.id }}</td>
+        <td>{{ pregunta.argumento }}</td>
+        <td>
+          <!-- Botón Editar -->
+          <button
+            class="btn btn-warning btn-sm me-2"
+            (click)="editarPregunta(pregunta)"
+          >
+            Editar
+          </button>
+          <!-- Botón Eliminar -->
+          <button
+            class="btn btn-danger btn-sm"
+            (click)="eliminarPregunta(pregunta.id)"
+          >
+            Eliminar
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="d-grid gap-2 col-6 mx-auto">
+    <button type="button" class="btn btn-outline-secondary" (click)="navigateHome()">Volver</button>
+  </div>
+</div>
+

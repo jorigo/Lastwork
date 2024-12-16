@@ -1,0 +1,45 @@
+
+    <h1>****Pagina de Gestion de Preguntas****</h1>
+
+  
+      <button class="btn btn-success" (click)="irAEditarPreguntas()">
+        Crear Preguntas
+      </button>
+    
+
+
+
+    <div class="container mt-3">
+      <h2>Listado de Encuestas</h2>
+    
+      <!-- Tabla de encuestas -->
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre de la Encuesta</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let encuesta of encuestasList">
+            <td>{{ encuesta.id }}</td>
+            <td>{{ encuesta.nombre }}</td>
+            <td>
+              <!-- Botón para agregar preguntas -->
+              <button
+                class="btn btn-primary btn-sm"
+                (click)="onAgregarPreguntas(encuesta)"
+              >
+                Agregar Preguntas
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    </div>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button type="button" class="btn btn-warning" (click)="navigateHome()">Volver al inicio</button>
+      </div>

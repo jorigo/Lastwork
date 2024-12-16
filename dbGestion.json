@@ -1,0 +1,128 @@
+{
+  "encuesta": [
+    {
+      "id": "1",
+      "nombre": " Inst Edu La Normal Juan Ladrilleros",
+      "totalrespondido": " 1234",
+      "idpregunta": "8"
+    },
+    {
+      "id": "2",
+      "nombre": " Inst Edu Seminario San Btura",
+      "totalrespondido": " 8566",
+      "idpregunta": "7"
+    },
+    {
+      "id": "5",
+      "nombre": " Inst Edu los Camilos",
+      "totalrespondido": " 5848",
+      "idpregunta": "7"
+    },
+    {
+      "id": "6",
+      "nombre": " Inst los marranos",
+      "totalrespondido": " 6996",
+      "idpregunta": "5"
+    },
+    {
+      "id": "7",
+      "nombre": " Inst Edu Las Mojarras",
+      "totalrespondido": " 54112",
+      "idpregunta": " "
+    },
+    {
+      "id": "11",
+      "nombre": " Inst Edu Chespirito",
+      "totalrespondido": " 123741",
+      "idpregunta": " "
+    },
+    {
+      "id": "12",
+      "nombre": " Inst Edu Jose Ramon Bejarano",
+      "totalrespondido": " 256565",
+      "idpregunta": "7"
+    },
+    {
+      "id": "13",
+      "nombre": " Inst Edu Incodelpa",
+      "totalrespondido": " 456",
+      "idpregunta": " "
+    },
+    {
+      "id": "14",
+      "nombre": " Inst. Edu. Liceo de occidente",
+      "totalrespondido": " 9989",
+      "idpregunta": " "
+    },
+    {
+      "id": "15",
+      "nombre": " Inst Edu. Piolin",
+      "totalrespondido": " 23",
+      "idpregunta": "7"
+    }
+  ],
+  "pregunta": [
+    {
+      "id": "1",
+      "argumento": "¿Tiene acceso a la computadora de su colegio?",
+      "idencuesta": "1"
+    },
+    {
+      "id": "2",
+      "argumento": "¿Maneja las herramientas tecnologicas?",
+      "idencuesta": "1"
+    },
+    {
+      "id": "3",
+      "argumento": " ¿Cuanto tiempo navega en internet en su casa?",
+      "idencuesta": "1"
+    },
+    {
+      "id": "4",
+      "argumento": " ¿Sabe algo de algoritmos?",
+      "idencuesta": "2"
+    },
+    {
+      "id": "6",
+      "argumento": "¿cual es su red social favorita?",
+      "idencuesta": "1"
+    },
+    {
+      "id": "7",
+      "argumento": "¿en su casa hay celular Smartphone, tvSmart u otro dispositivio con acceso a internet?",
+      "idencuesta": "1"
+    },
+    {
+      "id": "8",
+      "argumento": " ¿Conoce usted al profesor Lucio The Best?",
+      "idencuesta": "1"
+    },
+    {
+      "id": "9",
+      "argumento": " ¿A que edad uso el internet por primera vez?",
+      "idencuesta": "1"
+    }
+  ],
+  "Tipo-Preguntas": [
+    {
+      "id": "1",
+      "tipo": "Conocimiento"
+    },
+    {
+      "id": "2",
+      "tipo": "Informativa"
+    },
+    {
+      "id": "3",
+      "tipo": "Metricas"
+    },
+    {
+      "id": "4",
+      "tipo": " Cuantitativa"
+    },
+    {
+      "id": "5",
+      "tipo": "Calculadas"
+    }
+  ]
+}

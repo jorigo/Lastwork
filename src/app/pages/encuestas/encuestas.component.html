@@ -1,0 +1,34 @@
+
+<h1>****Listado De Encuestas****</h1>
+
+<button class="btn btn-success" (click)="onAgregar()">
+  Agregar Encuesta
+</button>
+
+
+
+<div *ngFor="let encuesta of encuestasList" class="card m-2">
+  <div class="card-body">
+    <p>Id: {{ encuesta.id }}</p>
+    <h5 class="card-title">Encuesta: {{ encuesta.nombre }}</h5>
+    
+
+   
+    <button class="btn btn-primary" (click)="onEditar(encuesta.id)">Editar</button>
+    <button class="btn btn-danger" (click)="onBorrar(encuesta.id)">Borrar</button>
+    <button
+      class="btn btn-outline-info"
+      [routerLink]="['/preguntasasociadas', encuesta.id]"
+    >
+      Ver Preguntas
+    </button>
+  </div>
+</div>
+
+
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button type="button" class="btn btn-warning" (click)="back()">Volver al inicio</button>
+      </div>
+
+
+  

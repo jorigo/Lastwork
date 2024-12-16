@@ -1,0 +1,49 @@
+
+
+<div class="container mt-5">
+  <h3>Editar Registro</h3>
+  <form (ngSubmit)="update()">
+    <!-- Campo de ID (solo lectura) -->
+    <div class="mb-3">
+      <label for="id" class="form-label">Id</label>
+      <input 
+        type="text" 
+        class="form-control" 
+        id="id" 
+        [value]="item.id" 
+        readonly>
+    </div>
+
+    <!-- Campo de Nombre -->
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre</label>
+      <input 
+        type="text" 
+        class="form-control" 
+        id="nombre" 
+        [(ngModel)]="item.nombre" 
+        name="nombre" 
+        required 
+        placeholder="Ingrese el nuevo nombre">
+    </div>
+
+    <!-- Campo de Total Respondido -->
+    <div class="mb-3">
+      <label for="totalrespondido" class="form-label">Total Respondido</label>
+      <input 
+        type="string" 
+        class="form-control" 
+        id="totalrespondido" 
+        [(ngModel)]="item.totalrespondido" 
+        name="totalrespondido" 
+        required 
+        placeholder="Ingrese el total respondido">
+    </div>
+
+    
+    <div class="d-flex justify-content-between">
+      <button type="button" class="btn btn-secondary" (click)="back()">Volver</button>
+      <button type="submit" class="btn btn-primary">Actualizar</button>
+    </div>
+  </form>
+</div>

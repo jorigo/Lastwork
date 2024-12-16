@@ -1,0 +1,15 @@
+
+<h2>AGREGAR ENCUESTA</h2>
+<section >
+        <p>Ingrese el nombre de la Institucion:</p>
+        <input type="text" [(ngModel)]="newEcuesta.nombre" name="Nombre">
+       
+
+        <p>Total Respuestas:</p>
+        <input type="text" [(ngModel)]="newEcuesta.totalrespondido" totalrespondido="totalrespondido">  
+</section>
+<button class="btn-success mb-3" (click)="onGuardar()">Guardar</button>
+    
+<div class="d-grid gap-2 col-6 mx-auto">
+        <button type="button" class="btn btn-secondary" (click)="back()">Volver al listado</button>
+      </div>
